@@ -54,7 +54,7 @@ Partial Class Form1
         Me.ListBox_Resources.Name = "ListBox_Resources"
         Me.ListBox_Resources.Size = New System.Drawing.Size(576, 182)
         Me.ListBox_Resources.TabIndex = 0
-        Me.ToolTip1.SetToolTip(Me.ListBox_Resources, "You can drag drop a project json file here.")
+        Me.ToolTip1.SetToolTip(Me.ListBox_Resources, "You can drag & drop a project json file here.")
         '
         'Button_MoveToRemove
         '
