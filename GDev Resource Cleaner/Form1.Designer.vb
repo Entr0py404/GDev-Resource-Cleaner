@@ -83,7 +83,7 @@ Partial Class Form1
         Me.Button_SelectProjectJSON.Size = New System.Drawing.Size(168, 32)
         Me.Button_SelectProjectJSON.TabIndex = 2
         Me.Button_SelectProjectJSON.Text = "Select Project JSON"
-        Me.ToolTip1.SetToolTip(Me.Button_SelectProjectJSON, "You can drag drop a project json file here.")
+        Me.ToolTip1.SetToolTip(Me.Button_SelectProjectJSON, "You can drag & drop a project json file here.")
         Me.Button_SelectProjectJSON.UseVisualStyleBackColor = False
         '
         'OpenFileDialog1
