@@ -38,7 +38,12 @@ Public Class Form1
             End If
 
             For Each item As String In ListBox_UnusedResources.Items
-                My.Computer.FileSystem.MoveFile(Path.GetDirectoryName(TextBox_ProjectFilePath.Text) & "\" & item, workingDir & "\!REMOVE\" & Path.GetFileName(item))
+
+                If Not Directory.Exists(workingDir & "\!REMOVE\" & Path.GetDirectoryName(item)) Then
+                    Directory.CreateDirectory(workingDir & "\!REMOVE\" & Path.GetDirectoryName(item))
+                End If
+
+                My.Computer.FileSystem.MoveFile(Path.GetDirectoryName(TextBox_ProjectFilePath.Text) & "\" & item, workingDir & "\!REMOVE\" & item)
             Next
 
             If File.Exists(OpenFileDialog1.FileName) Then
